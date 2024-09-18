@@ -1,16 +1,107 @@
-import Navbar from "../components/Navbar/Navbar";
+import * as React from "react";
+
+import Navbar from "../components/Navbar";
+import SidebarMenu from "../components/SidebarMenu";
 
 import "./App.scss";
 
-function App() {
+const App = () => {
+  const [menuOpen, setMenuOpen] = React.useState(true);
+
   return (
-    <div className="App">
+    <div className="">
       <Navbar />
-      <h1 className="text-3xl font-bold underline text-blue-700">
-        Hello world!
-      </h1>
+      <div className="relative flex overflow-auto h-[calc(100vh-48px)] border-t border-gray-300">
+        <SidebarMenu
+          open={menuOpen}
+          onToggle={() => {
+            setMenuOpen((prev) => !prev);
+          }}
+        />
+        <main className="border-l border-gray-300">
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+          <p>test</p>
+        </main>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
