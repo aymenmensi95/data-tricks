@@ -38,7 +38,7 @@ const SidebarMenu = (props) => {
     } else {
       timeout.current = setTimeout(() => {
         setRemoveText(true);
-      }, 2000);
+      }, 200);
     }
   }, [open]);
 
@@ -56,9 +56,7 @@ const SidebarMenu = (props) => {
     <aside
       className={classNames(
         "sticky top-0 h-[calc(100vh-48px)] shrink-0 overflow-auto transition-all",
-        {
-          "max-w-[64px]": !open,
-        }
+        open ? "max-w-221px" : "max-w-64px"
       )}
     >
       <div className="flex justify-end p-3">

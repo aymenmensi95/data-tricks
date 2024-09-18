@@ -5,7 +5,7 @@ const Tabs = (props) => {
   const { tabs, activeIndex, setActiveIndex } = props;
 
   return (
-    <div className="border-b border-gray-300">
+    <div className="border-b border-gray-300 px-3">
       {tabs?.map(({ key, label, unread }, index) => {
         return (
           <button
@@ -13,7 +13,7 @@ const Tabs = (props) => {
             onClick={() => {
               setActiveIndex?.(index);
             }}
-            className={classNames("p-4", {
+            className={classNames("p-3", {
               "text-lime-700 border-b-[3px] border-lime-700":
                 activeIndex === index,
             })}

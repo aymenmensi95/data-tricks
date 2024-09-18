@@ -6,6 +6,7 @@ import Sheets from "../components/Sheets";
 import SheetPage from "../components/SheetPage/SheetPage";
 
 import "./App.scss";
+import classNames from "classnames";
 
 const App = () => {
   const [menuOpen, setMenuOpen] = React.useState(true);
@@ -21,7 +22,12 @@ const App = () => {
             setMenuOpen((prev) => !prev);
           }}
         />
-        <main className="flex-1 border-l border-gray-300">
+        <main
+          className={classNames(
+            "flex-1 border-l border-gray-300",
+            menuOpen ? "max-w-[calc(100%-221px)]" : "max-w-[calc(100%-64px)]"
+          )}
+        >
           <Sheets
             activeIndex={activeSheetIndex}
             setActiveIndex={setActiveSheetIndex}
