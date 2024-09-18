@@ -36,12 +36,14 @@ const Navbar = () => {
           <PiGear className="text-xl" />
         </button>
         <button className="text-left inline-flex items-center gap-2 p-2 transition hover:bg-gray-100">
-          <img
-            className="w-8 h-8 rounded-full"
-            src="https://images.unsplash.com/photo-1640952131659-49a06dd90ad2?q=80&w=300"
-            alt="avatar"
-            width="20px"
-          />
+          <span className="w-8 h-8 rounded-full overflow-hidden">
+            <img
+              className="w-auto h-full object-cover"
+              src="https://images.unsplash.com/photo-1640952131659-49a06dd90ad2?q=80&w=300"
+              alt="avatar"
+              width="20px"
+            />
+          </span>
           <span className="inline-flex flex-col gap-1 min-w-28">
             <span className="text-sm leading-none font-medium text-black">
               Chokri

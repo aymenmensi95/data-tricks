@@ -55,7 +55,7 @@ const SidebarMenu = (props) => {
   return (
     <aside
       className={classNames(
-        "sticky top-0 h-[calc(100vh-48px)] overflow-auto transition-all",
+        "sticky top-0 h-[calc(100vh-48px)] shrink-0 overflow-auto transition-all",
         {
           "max-w-[64px]": !open,
         }
